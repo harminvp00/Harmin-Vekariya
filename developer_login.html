@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="/index.html"> -->
+    <title>Developer Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="PNG/Website_Logo.png">
+    <script src="index.js"></script>
+
+</head>
+    <body>
+        <nav>
+            <div id="left-navbar">
+                <ul>
+                    <!-- three dot menu is here -->
+                    <li>
+                        <div class="nav-items">
+                            <button style="background-image: url(PNG/list-symbol-of-three-items-with-dots.png);" type="button"
+                                class="nav-btn"></button>
+                            <div class="navbar-items">
+                                <a href="#">About us</a>
+                                <a href="#">Contact us</a>
+                                <a href="#">Setting</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- break -->
+                </ul>
+            </div>
+        
+        
+            <div id="right-navbar">
+                <ul>
+                    <!-- Home CSS here -->
+                    <li>
+                        <div class="nav-items">
+                            <button style="background-image: url(PNG/home.png);" type="button" class="nav-btn"></button>
+                            <div class="navbar-items">
+                                <a href="#intoduction"> Introduction </a>
+                                <a href="#my-intrests"> Interest</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- break -->
+        
+                    <!-- project menu CSS  -->
+                    <li>
+                        <div class="nav-items">
+                            <button style="background-image: url(PNG/briefing.png);" type="button" class="nav-btn"></button>
+                            <div class="navbar-items">
+                                <a href="#">Instagram profile page</a>
+                                <a href="#">Car Ranker </a>
+                                <a href="#">Online Electrnic item shopping</a>
+                                <a href="#">Mover & Packer website</a>
+                            </div>
+                        </div>
+                    </li>
+        
+                    <!-- awards menu CSS  -->
+                    <li>
+                        <div class="nav-items">
+                            <button style="background-image: url(PNG/award.png);" type="button" class="nav-btn"></button>
+                            <div class="navbar-items">
+                                <a href="#">Hackathon</a>
+                            </div>
+                        </div>
+                    </li>
+        
+                    <!-- studies menu CSS  -->
+                    <li>
+                        <div class="nav-items">
+                            <button style="background-image: url(PNG/graduation-hat.png);" type="button"
+                                class="nav-btn"></button>
+                            <div class="navbar-items">
+                                <a href="#">School</a>
+                                <a href="#">High School</a>
+                                <a href="#">Collage</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- developer login is here -->
+                    <li>
+                        <div class="nav-items">
+                            <button style="background-image: url(PNG/user.png);" type="button" class="nav-btn"></button>
+                            <div class="navbar-items">
+                                <a href="#">Profile</a>
+                                <a href="#">Edit account</a>
+                                <a href="developer_login.html">Login</a>
+                                <a href="#">Log out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- break -->
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- form is here for develpoer login  -->
+        <div class="login-block">
+            <h1 id="dev-login-header"> Developer Login </h1>
+            <form name="dev_login" id="dev-login" action="/action.php" method="post" onsubmit="checkForUsername()">
+                <label for=""> Username </label>
+                <input id="username" type="text" name="username" placeholder="Username" required>
+                <label for=""> Password </label>
+                <input id="password" type="password" name="password" placeholder="Password" required>
+                <button id="login-btn" type="submit" name="login_btn" value="login">login</button>
+                <a id="create-new-acc-link" href="#"> create new one? </a> 
+                <a id="forget-pass-link" href="#"> forget password? </a>
+            </form>
+        </div>
+
+        <!-- footer is here  -->
+        <footer>
+            <div class="footer-block">
+                <div class="block1">
+                    <a href="#"><img src="PNG/facebook.png" alt="The-facebook-png"></a>
+                </div>
+                <div class="block2">
+                    <a href="#"><img src="PNG/instagram.png" alt="The-facebook-png"></a>
+                </div>
+                <div class="block3">
+                    <a href="#"><img src="PNG/gmail.png" alt="The-facebook-png"></a>
+                </div>
+                <div class="block4">
+                    <a href="#"><img src="PNG/twitter.png" alt="The-facebook-png"></a>
+                </div>
+            </div>
+            <div class="legal-details">
+                <p> &copy; 2024 Gandhinagar India <br> All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

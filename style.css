@@ -1,0 +1,427 @@
+
+/* this link are the font link which are used in the websites  */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&display=swap');
+
+
+/* universal css for all elements in .html docs  */
+* {
+    /* zero padd and margins for all html element in doccuemnt  */
+    padding: 0px;
+    margin: 0px;
+
+    /* font whhich are used in the html docs  */
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+    background-color: rgb(74, 74, 86);
+}
+
+/* ----------------------------------------------------------- */
+/* New navbar css code for make it responsive  */
+/* updated third time */
+nav{
+    background-color: rgb(132, 132, 186);
+    width: 100%;
+    height: 100px;
+    box-shadow: 2px 2px 10px white;
+}
+
+/* CSS for left side btn  */
+nav #left-navbar{
+    /* border: 2px solid black; */
+    position: relative;
+    display: inline-block;
+    right: 40px;
+    margin-left: 40px;
+    top: 10px;
+}
+
+/* CSS for right side btn  */
+nav #right-navbar{
+    /* border: 2px solid black; */
+    float: right;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+/* CSS for all li inside the <nav>  */
+nav li{
+    display: inline-block;
+    position: relative;
+    margin: 0px 60px;
+    /* border: 2px solid black; */
+    padding: 15px;
+    list-style-type: none;
+    align-content: center;
+    
+}
+
+/* CSS for button inside li > nav  */
+.nav-items .nav-btn{
+    border: none;
+    display: 100px;
+    min-width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: 90%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: rgb(132, 132, 186);
+}
+
+/* CSS for <a> inside dropdown class */
+.nav-items a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(148, 148, 237);
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    min-width: 150px;
+}
+
+/* CSS for dropdown items class  */
+.nav-items .navbar-items {
+    display: none;
+    position: absolute;
+    left: -50px;
+    z-index: 1;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+}
+
+/*  Hover effect for the nav-item for display them  */
+.nav-items:hover .navbar-items {
+    display: block;
+}
+
+/* hover effect for btn > .nav-items  */
+.nav-btn:hover {
+    background-color: rgb(156, 156, 234);
+    border-radius: 50%;
+}
+
+/* Hover effect for the a > .nav-items  */
+.nav-items a:hover {
+    color: white;
+    background-color: rgb(123, 123, 231);
+}
+
+/* ----------------------------------------------------------- */
+/* from here the the article section is start */
+article #heading-introduction{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    text-transform:capitalize ;
+    margin: 80px 0px 40px 0px;
+    min-width: 100%;
+}
+
+article #introduction{
+    display: flex;
+    border: 2px solid black;
+    padding: 40px;
+    margin: 40px 40px 0px 40px;
+    background-color: rgb(132, 132, 186);
+    border-radius: 25px;
+}
+#introduction .profile-image {
+    display: inline-block;
+    border: none;
+    max-width: auto;
+    margin: 0px 100px;
+}
+
+#introduction .profile-image img{
+    width: 300px;
+    height: 300px;
+}
+
+#introduction .profile-desc {
+    display: inline-block;
+    border: 2px solid black;
+    max-width: auto;
+    margin: 0px 20px;
+    background-color: rgb(156, 156, 234);
+    border: none;
+    border-radius: 20px;
+}
+#introduction .profile-desc h2 {
+    max-width: auto;
+    margin: 20px 20px;
+    font-size: 40px;
+}
+
+#introduction .profile-desc p{
+    max-width: auto; 
+    margin: 0px 20px;
+    font-size: 25px;
+}
+/* 
+article .introduction .profile-image {
+    border: 2px solid black;
+
+} */
+
+/* ----------------------------------------------------------- */
+/* CSS switch  */
+
+
+/* MY INTERSET Heading at the Top of All of Interest  */
+article #my-intrests h1{
+    color: white;
+    padding: 10px;
+    margin: 100px 20px 0px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: auto;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* each li represent my one interset block  */
+#my-intrests .intrests li{
+    display: inline-block;
+}
+
+/* title of interest  */
+#my-intrests .intrests .intrest h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+/* css for interest description  */
+#my-intrests .intrests .intrest p{
+    font-size: 20px;
+    margin: 10px 0px;
+    width: 300px;
+}
+
+/* css for btn in intrest div  */
+#my-intrests .intrests .intrest .btn{
+    position: relative;
+    margin: 10px;
+    padding: 7px 14px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 1px 0px 5px rgb(81, 76, 76);
+    cursor: pointer;
+    color: white;
+    background-color: #4545f2;
+}
+
+/* Hover effect for my Btn  */
+#my-intrests .intrests .intrest .btn:hover {
+    background-color: #0909e3;
+}
+
+/* Margin to the all Block 20 px left  */
+#my-intrests .intrests {
+    margin: 0 20px;
+}
+
+/* css for each and every code  */
+#my-intrests .intrests .intrest {
+    background-color: rgb(132, 132, 186);
+    border: 2px solid black;
+    padding: 20px 25px 0px 25px;
+    margin: 20px 25px 25px 25px;
+    border-radius: 25px;
+    min-width: 300px;
+    box-shadow: 1px 1px 10px whitesmoke;
+}
+
+/* css for image in interese div. */
+#my-intrests .intrests .intrest img{
+    margin: 10px 0px auto;
+    min-width: 300px;
+    height: 300px;
+}
+
+/* ----------------------------------------------------------- */
+/* media query for device size under 1268px  */
+@media screen and (max-width:1268px) {
+
+    .nav-items .nav-btn {
+        width: 50px;
+        height: 50px;
+        background-size: 80%;
+    }
+
+    nav li {
+
+        margin: 0px 20px;
+    }
+
+}
+
+/* ----------------------------------------------------------- */
+/* media query for device size under 787px  */
+@media screen and (max-width:787px) {
+
+    nav {
+        height: 80px;
+    }
+
+    .nav-items .nav-btn {
+        /* border: 2px solid black; */
+        width: 25px;
+        height: 25px;
+        background-size: 50%;
+    }
+
+    nav li {
+        margin: 0px 5px;
+    }
+}
+
+/* ----------------------------------------------------------- */
+/* switch 
+CSS for developer login page*/
+
+.login-block{
+    border: 2px solid white;
+    background-color: rgb(132, 132, 186);
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px white;
+    padding: 50px;
+    margin: 0px 500px;
+    margin-top: 50px;
+}
+
+#dev-login-header{
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#dev-login{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 28%;
+    width: 200px;
+    margin: 20px 20px 0px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#dev-login label{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#dev-login input{
+    border: none;
+    width: 300px;
+    padding: 15px 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#dev-login input::placeholder{
+    font-size: 20px;
+}
+
+#dev-login #login-btn{
+    width: 315px;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(212, 238, 16);
+    box-shadow: 1px 1px 5px white;
+}
+
+#dev-login a{
+    color: blue;
+    position: relative;
+    left: 50px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* ----------------------------------------------------------- */
+/* footer code is here  */
+footer {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(132, 132, 186);
+}
+
+footer .footer-block {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 40%;
+    left: 35%;
+    width: 30%;
+}
+
+footer .footer-block .block1 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+footer .footer-block .block2 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+footer .footer-block .block3 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+footer .footer-block .block4 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+footer .legal-details {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 150px;
+    width: 20%;
+    left: 40%;
+}
+
+footer .legal-details img {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+footer .legal-details p {
+    position: relative;
+    top: -1px;
+    bottom: 22px;
+    left: 60px;
+    font-size: 20px;
+    text-align: center;
+}
